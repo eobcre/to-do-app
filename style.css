@@ -1,0 +1,12 @@
+:root {
+  --light-blue: #4f86f6;
+  --dark-blue: #015697;
+  --yellow: #f3c738;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
