@@ -10,3 +10,40 @@
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--light-blue);
+}
+
+header,
+#app {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+  appearance: none;
+  background: none;
+}
+
+input {
+  flex: 1 1 0%;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+h1 {
+  color: var(--yellow);
+  font-size: 1.5rem;
+}
