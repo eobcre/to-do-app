@@ -30,16 +30,23 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-    <img src="./img/logo.svg" alt="Logo" width="180" class="todo-logo" />
+    <header>
+      <img src="./img/logo.svg" alt="Logo" width="180" class="todo-logo" />
 
-    <form id="task-form">
-      <input id="task-input" type="text" placeholder="What's your plans?" />
-      <input id="task-submit" type="submit" value="Push" />
-    </form>
+      <form id="task-form">
+        <input id="task-input" type="text" autocomplete="off" placeholder="What's your plans?" />
+        <input id="task-submit" type="submit" value="ADD"/>
+      </form>
+      </header>
 
-    <div>
-      <h1>Tasks</h1>
-      <div id="task-list"></div>
+      <div id="app">
+        <h1>Tasks</h1>
+        <ul id="task-list"></ul>
+        <!-- <div>
+        Study JavaScript
+        <button>Delete</button>
+      </div> -->
+      </div>
     </div>
   </body>
 </html>
