@@ -18,14 +18,15 @@ window.addEventListener('load', () => {
   });
 
   const addTask = (task) => {
-    const divItem = document.createElement('div');
-    const showItem = taskList.appendChild(divItem);
+    const listItem = document.createElement('li');
+    const showItem = taskList.appendChild(listItem);
     showItem.innerHTML = task;
 
     // Delete button
     const buttonDelete = document.createElement('button');
-    buttonDelete.innerHTML = 'Delete';
-    divItem.appendChild(buttonDelete);
+    buttonDelete.classList.add('delete-btn');
+    buttonDelete.innerHTML = 'DONE';
+    listItem.appendChild(buttonDelete);
     // Function
     buttonDelete.addEventListener('click', (e) => {
       e.preventDefault();
@@ -34,7 +35,7 @@ window.addEventListener('load', () => {
   };
   // Remove
   const deleteTask = (buttonDelete) => {
-    const selectTask = buttonDelete.closest('div');
+    const selectTask = buttonDelete.closest('li');
     taskList.removeChild(selectTask);
   };
 });
