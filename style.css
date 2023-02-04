@@ -93,3 +93,12 @@ li {
   color: var(--yellow);
   background-color: var(--dark-blue);
 }
+
+// Clear button
+#task-form {
+  position: relative;
+}
+
+#clear-button {
+  position: absolute;
+}
