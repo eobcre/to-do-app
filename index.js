@@ -41,7 +41,7 @@ window.addEventListener('load', () => {
 });
 
 // Clear button
-function clearClick() {
+const clearClick = () => {
   const clearText = document.getElementById('task-input');
   clearText.value = '';
-}
+};
