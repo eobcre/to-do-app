@@ -34,16 +34,20 @@
       <img src="./img/logo.svg" alt="Logo" width="180" class="todo-logo" />
 
       <form id="task-form">
-        <input id="task-input" type="text" autocomplete="off" placeholder="What's your plans?" />
-        <div id="clear-button" onclick=""><img src="./img/clear.svg" alt="Icon"></div>
-        <input id="task-submit" type="submit" value="ADD"/>
+        <input
+          id="task-input"
+          type="text"
+          autocomplete="off"
+          placeholder="What's your plans?"
+        />
+        <input type="button" value="Clear" onclick="clearClick()" />
+        <input id="task-submit" type="submit" value="ADD" />
       </form>
-      </header>
+    </header>
 
-      <div id="app">
-        <h1>Tasks</h1>
-        <ul id="task-list"></ul>
-      </div>
+    <div id="app">
+      <h1>Tasks</h1>
+      <ul id="task-list"></ul>
     </div>
   </body>
 </html>
