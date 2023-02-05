@@ -39,3 +39,9 @@ window.addEventListener('load', () => {
     taskList.removeChild(selectTask);
   };
 });
+
+// Clear button
+function clearClick() {
+  const clearText = document.getElementById('task-input');
+  clearText.value = '';
+}
