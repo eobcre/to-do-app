@@ -10,7 +10,12 @@ window.addEventListener('load', () => {
     const task = taskInput.value;
     // Alert
     if (!task) {
-      alert('Please add the task.');
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Please add a task.',
+        background: '#fff',
+      });
     } else {
       addTask(task);
       taskInput.value = '';
