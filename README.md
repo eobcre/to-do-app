@@ -4,3 +4,4 @@
 
 - Vanila JavaScript
 - CSS
+- sweetalert2
