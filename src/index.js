@@ -3,12 +3,12 @@ window.addEventListener('load', () => {
   const taskInput = document.querySelector('#task-input');
   const taskList = document.querySelector('#task-list');
 
-  // Add button
+  // add button
   taskForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const task = taskInput.value;
-    // Alert
+    // alert
     if (!task) {
       Swal.fire({
         icon: 'error',
@@ -26,25 +26,25 @@ window.addEventListener('load', () => {
     const showItem = taskList.appendChild(listItem);
     showItem.innerHTML = task;
 
-    // Delete button
+    // delete button
     const buttonDelete = document.createElement('button');
     buttonDelete.classList.add('delete-btn');
     buttonDelete.innerHTML = 'DONE';
     listItem.appendChild(buttonDelete);
-    // Function
+    // function
     buttonDelete.addEventListener('click', (e) => {
       e.preventDefault();
       deleteTask(buttonDelete);
     });
   };
-  // Remove
+  // remove
   const deleteTask = (buttonDelete) => {
     const selectTask = buttonDelete.closest('li');
     taskList.removeChild(selectTask);
   };
 });
 
-// Clear button
+// clear button
 const clearClick = () => {
   const clearText = document.getElementById('task-input');
   clearText.value = '';
