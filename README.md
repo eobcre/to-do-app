@@ -2,6 +2,7 @@
 
 # to-do-app
 
-- Vanila JavaScript
+- JavaScript
+- HTML
 - CSS
 - sweetalert2
